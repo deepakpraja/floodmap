@@ -58,7 +58,7 @@ pip install -r requirements.txt
 Once all packages are installed, run the flood detection script:
 
 ```bash
-python flood-detection.py
+python flood_detection.py
 ```
 
 > **Note**: Make sure to edit the file paths in `flood-detection.py` before running the script.
