@@ -5,7 +5,7 @@ from scipy.ndimage import binary_opening, binary_closing
 
 preImagePath = "D:/DeepakAssig/Sentinal1/Pre_20220611.tif"
 postImagePath = "D:/DeepakAssig/Sentinal1/Post_20220623.tif"
-floodOutputPath = "D:/DeepakAssig/Threshhold/flood_mask_0.09.tif"
+floodOutputPath = "D:/DeepakAssig/Threshhold/flood_mask_output.tif"
 
 with rasterio.open(preImagePath) as pre_src:
     pre_image = pre_src.read(1) 
