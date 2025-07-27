@@ -119,6 +119,7 @@ flood_pixel = diff < -0.09
 ```
 
 This is a common SAR-based flood detection value, but can be tuned based on scene conditions.
+
 ---
 
 ## 🖊️ Notes
