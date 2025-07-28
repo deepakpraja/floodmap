@@ -96,7 +96,7 @@ floodOutputPath = "D:/DeepakAssig/Threshhold/flood_mask_0.09.tif"
 2. **Replace no-data values (`0`)** with `NaN`
 3. **Crop** the larger image to match the smaller one
 4. **Compute difference**: `post - pre`
-5. **Threshold**: Identify pixels with a drop greater than `0.09`
+5. **Threshold**: Identify pixels with a drop greater than `-0.1`
 6. **Clean**: Apply `binary_opening` and `binary_closing`
 7. **Save flood mask** as a GeoTIFF
 8. **Display map** of flood-affected areas
@@ -112,10 +112,10 @@ floodOutputPath = "D:/DeepakAssig/Threshhold/flood_mask_0.09.tif"
 
 ## Threshold Logic
 
-The threshold `0.09` is used to detect significant drops in SAR backscatter:
+The threshold `-0.1` is used to detect significant drops in SAR backscatter:
 
 ```python
-flood_pixel = diff < -0.09
+flood_pixel = diff < -0.1
 ```
 
 This is a common SAR-based flood detection value, but can be tuned based on scene conditions.
